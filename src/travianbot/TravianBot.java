@@ -69,15 +69,6 @@ public class TravianBot {
             ex.printStackTrace();
             Logger.fatal("Some untitle exception ");
                        
-        }
-        
-        //try{
-        
-            
-       // }catch(){
-        //     Logger.fatal("Can't connection");
-        //    return;
-       // }
-               
+        }               
     }
 }

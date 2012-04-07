@@ -5,6 +5,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.PrintWriter;
 import java.net.Socket;
+import travianbot.Logger;
 
 /**
  *
@@ -28,6 +29,7 @@ public class HttpWorker {
 
             host=server;
             this.port=port;
+            Logger.trace("Создали подключени к "+host+":"+port);
 
     }
       
@@ -105,12 +107,7 @@ public class HttpWorker {
             }
 
             String[][] newCookie = new String[n+cookie.length][2];
-
-            for(int i=0;i<cookie.length;i++){
-
-                    newCookie[i] = cookie[i]; 
-
-            }
+            System.arraycopy(cookie, 0, newCookie, 0, cookie.length);
             int num=cookie.length;
             for(int i=0;i<headCount;i++){
 
@@ -146,13 +143,11 @@ public class HttpWorker {
     protected void makeConnect(String first, String text){
 
             error = 0;
-            Socket fromserver = null;
+            Socket fromserver;
 
             try {
 
                     fromserver = new Socket(host,port);
-
-
 
                     in = new BufferedReader(new	InputStreamReader(fromserver.getInputStream()));
 

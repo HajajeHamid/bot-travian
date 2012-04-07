@@ -23,7 +23,7 @@ public class Game {
            
             this.gamename=gamename;
             config = new Config("src/"+gamename+".ini");
-
+            Logger.trace("Загружаем конфиг для игры "+gamename+" из "+"src/"+gamename+".ini");
 
             connection =  new TravianServer(config.getString("host/host"),
                                         config.getInt("host/port"),
@@ -32,6 +32,8 @@ public class Game {
                                                 );
             
             if(!connection.login()) throw new GameException(gamename,"Can't login");
+            
+            
 
         
         } catch (ConfigValueNotFoundException ex) {
