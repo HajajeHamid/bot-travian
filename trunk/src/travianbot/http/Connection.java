@@ -1,5 +1,7 @@
 package travianbot.http;
 
+import travianbot.Logger;
+
 /**
  *
  * @author Esr
@@ -37,6 +39,8 @@ public class Connection extends HttpWorker {
     protected String rec(String url){
 
             makeConnect("GET "+url+" HTTP/1.1", "");
+            Logger.trace("GET "+url+" HTTP/1.1");
+            Logger.trace(html);
             return html;
 
     }
@@ -53,6 +57,7 @@ public class Connection extends HttpWorker {
             get = get.substring(0, get.length()-1);
 
             makeConnect("GET "+url+"?"+get+" HTTP/1.1", "");
+            Logger.trace("GET "+url+"?"+get+" HTTP/1.1");
             return html;
 
     }
@@ -69,16 +74,17 @@ public class Connection extends HttpWorker {
             post = post.substring(0, post.length()-1);
 
             makeConnect("POST "+url+" HTTP/1.1", post);
-            System.out.println("POST "+url+" HTTP/1.1");
+            Logger.trace("POST "+url+" HTTP/1.1"+post);
             return html;
+            
     }
 
     protected String getInput(String name){
 
             String[] hid=html.split("name=\"login\" value=\"");
 
-                String[] hid1=hid[1].split("\"");
-                return hid1[0]; 
+            String[] hid1=hid[1].split("\"");
+            return hid1[0]; 
     }
     
 }
