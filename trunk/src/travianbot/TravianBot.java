@@ -1,5 +1,6 @@
 package travianbot;
 
+import travianbot.game.Game;
 import java.io.IOException;
 import java.util.ArrayList;
 import travianbot.Exception.ConfigValueNotFoundException;
