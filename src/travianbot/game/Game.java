@@ -42,11 +42,11 @@ public class Game {
                                         config.getString("user/password")
                                              );
             
-           // if(!connection.login()) throw new GameException(gamename,"Can't login");
+            if(!connection.login()) throw new GameException(gamename,"Can't login");
             
             Logger.info("Залогинелись к http://"+ connection.getHost()+":"+ connection.getPort()+"/ Логин: "+ connection.getUserName()+" пароль "+ connection.getPassword());
 
-           Dorf1 dorf1 = new Dorf1(/*connection.getHtml()*/FileWorker.get_file("dorf1"));
+           Dorf1 dorf1 = new Dorf1(connection.getHtml());
            golds=dorf1.golds;
            silvers = dorf1.silvers;
            
@@ -77,7 +77,12 @@ public class Game {
     
    public void refresh(){
    
-       
+       for(int i=0;i<villages.size();i++){
+           
+          ((Village)villages.get(i)).refresh();
+           
+       }
+     
    
    }
    

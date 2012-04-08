@@ -7,7 +7,6 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 import tools.RegexpUtils;
-import travianbot.Logger;
 import travianbot.game.Game;
 
 /**
@@ -27,9 +26,7 @@ public int[][][] fields;
 public int[] fieldsCount;
 public int type;
 public int time;
-public String name;
-public int loyalty;
-public boolean isBuild;
+
 String html;
 
 
@@ -47,30 +44,6 @@ String html;
 			return null;
 		}
 	} 
-
-private void parseName(){
-
-    List<List<String>> rez = new ArrayList<List<String>>();
-    RegexpUtils.preg_match_all("/id=\"villageNameField\">(.+?)<\\//", html, rez);
-
-    name = rez.get(0).get(1).trim();
-      
-
-}
-
-private void parseLoyalty(){
-
-    
-    List<List<String>> rez = new ArrayList<List<String>>();
-    RegexpUtils.preg_match_all("/class=\"loyalty high\">(.+?)<\\//", html, rez);
-
-    String res = rez.get(0).get(1);
-    String r[] = res.split(":");
-    r=r[1].split("%");
-    loyalty = Integer.parseInt(r[0].trim());
-
-}
-  
 
 
 private void parseFields(){
@@ -125,7 +98,7 @@ private void parseFields(){
     fields = new int[4][18][2];
     for(int i=0;i<18;i++){    
             fields[resource[i][0]-1][fieldsCount[resource[i][0]-1]][0]=resource[i][1];
-            fields[resource[i][0]-1][fieldsCount[resource[i][0]-1]++][1]=i+1;
+            fields[resource[i][0]-1][fieldsCount[resource[i][0]-1]++][1]=i;
     }
     
    
@@ -221,22 +194,19 @@ void  parseUnits(){
 }
 
 void parseBuildingProduction(){
-    List<List<String>> t = new ArrayList<List<String>>();
-    isBuild = RegexpUtils.preg_match_all("/building_contac(.+?)/", html, t);
-    
-    if(isBuild){
+
     List<List<String>> rez = new ArrayList<List<String>>();
     RegexpUtils.preg_match_all("/<span id=\"timer1\">(.+?)</span>/", html, rez);
-    System.out.println("u1 = " + rez.get(0).get(1));
+    System.out.println("u = " + rez.get(0).get(1));
     //System.out.println("n = " + rez.get(0).get(2));
-    }
+    RegexpUtils.preg_match_all("/<span id=\"timer2\">(.+?)</span>/", html, rez);
+    System.out.println("u = " + rez.get(0).get(1));
 
 }
 
 
     public Dorf1(String html){
     
-        Logger.info(html);
         this.html=html;
         parseFields();
         parseVillages();
@@ -246,50 +216,8 @@ void parseBuildingProduction(){
         parseProduction();
         parseUnits();
         parseBuildingProduction();
-        parseName();
-        parseLoyalty();
         
-
-
-//public int[][][] fields;
-//public int[] fieldsCount;
-
-
-
-        /*
-        Logger.trace("Сейчас "+time);
-        Logger.trace("У игрока голда "+golds);
-        Logger.trace("У игрока серебра "+silvers);
-        Logger.trace("Деревни");
-        for(int i=0;i<villages.length;i++){
-           Logger.trace("Деревня с id "+villages[i]); 
-        }
-
-        Logger.trace("Деревня "+name);
-        Logger.trace("Лоялность равна "+loyalty);
-        Logger.trace("Тип деревни "+type);
-        
-        for(int i=0;i<resurses.length;i++){
-           Logger.trace("Ресурса "+i+" в деревне "+resurses[i]); 
-        }
-        
-        Logger.trace("Потребление зерна"+cornConsumption);
-
-        for(int i=0;i<prodactions.length;i++){
-           Logger.trace("Ресурса "+i+" производиться "+prodactions[i]); 
-        }
-        
-        for(int i=0;i<4;i++){
-            for(int j=0;j<fieldsCount[i];j++){
-                
-                    Logger.trace("Поле тип "+i+" имеет id "+fields[i][j][1]+" имеет лвл "+fields[i][j][0]);
-                    
-                
-                
-            }
-            
-        }
-	//*/		
+			
          
      }
     
