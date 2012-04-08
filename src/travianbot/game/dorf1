@@ -1,0 +1,359 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<title>Travian se4</title>
+		<meta http-equiv="cache-control" content="max-age=0" />
+		<meta http-equiv="pragma" content="no-cache" />
+		<meta http-equiv="expires" content="0" />
+		<meta http-equiv="imagetoolbar" content="no" />
+		<meta http-equiv="content-type"	content="text/html; charset=UTF-8" />
+		<meta name="content-language" content="se" />
+						<link href="gpack/travian_Travian_4.0_Ilyas/lang/se/compact.css?asd423" rel="stylesheet" type="text/css" /><link href="gpack/travian_Travian_4.0_Ilyas/lang/se/lang.css?asd423" rel="stylesheet" type="text/css" />				<link href="img/travian_basics.css" rel="stylesheet" type="text/css" />
+						<script type="text/javascript" src="crypt.js?1331140411"></script>
+<script type="text/javascript">
+Travian.Translation.add(
+{
+	'allgemein.anleitung':	'Instruktioner',
+	'allgemein.cancel':	'avbryt',
+	'allgemein.ok':	'OK',
+	'cropfinder.keine_ergebnisse': 'Inga sökresultat funna'
+});
+Travian.applicationId = 'T4.0 Game';
+Travian.Game.version = '4.0';
+Travian.Game.worldId = 'se44';
+</script>						<script type="text/javascript">
+			Travian.Game.eventJamHtml = '&lt;a href=&quot;http://t4.answers.travian.se/index.php?aid=249#go2answer&quot; target=&quot;blank&quot; title=&quot;Travian Answers&quot;&gt;&lt;span class=&quot;c0 t&quot;&gt;0:00:0&lt;/span&gt;?&lt;/a&gt;'.unescapeHtml();
+		</script>
+					</head>
+	<body class="v35 gecko village1">
+							<div id="wrapper">
+								<img id="staticElements" src="img/x.gif" alt="" />
+									<div id="logoutContainer">
+						<a id="logout" href="logout.php" title="Logga ut">&nbsp;</a>
+					</div>
+								<div class="bodyWrapper">
+					
+										<img style="filter:chroma();" src="img/x.gif" id="msfilter" alt="" />
+										<div id="header">
+						<div id="mtop">
+							<a id="logo" href="http://www.travian.se/" target="_blank" title="Travian"></a>
+							<div id="myGameLinkHeaderWrapper">
+															</div>
+																					<ul id="navigation">
+					        	<li id="n1" class="resources">
+					        		<a class=" active" href="dorf1.php" accesskey="1" title="Råvaror"></a>
+					        	</li>
+					            <li id="n2" class="village">
+					            	<a class="" href="dorf2.php" accesskey="2" title="Byggnader"></a>
+					            </li>
+					            <li id="n3" class="map">
+					            	<a class="" href="karte.php" accesskey="3" title="Karta"></a>
+					            </li>
+					            <li id="n4" class="stats">
+					            	<a class="" href="statistiken.php" accesskey="4" title="Statistik"></a>
+					            </li>
+					            <li id="n5" class="reports">
+					            	<a class="" href="berichte.php" accesskey="5" title="Rapporter "></a>
+					            	<div class="ltr bubble" title="0 nya rapporter." style="display:none"><div class="bubble-background-l"></div><div class="bubble-background-r"></div><div class="bubble-content">0</div></div>					            </li>
+					            <li id="n6" class="messages">
+					            	<a class="" href="nachrichten.php" accesskey="6" title="Meddelanden "></a>
+					            	<div class="ltr bubble" title="0 nya meddelanden." style="display:none"><div class="bubble-background-l"></div><div class="bubble-background-r"></div><div class="bubble-content">0</div></div>					            </li>
+					        </ul>
+														<div class="clear"></div>
+						</div>
+											</div>
+
+					<div id="mid">
+												<a id="ingameManual" href="help.php" title="Hjälp">
+							<img src="img/x.gif" class="question" alt="Hjälp"/>
+						</a>
+
+												<div class="clear"></div>
+						<div id="contentOuterContainer">
+							<div class="contentTitle">&nbsp;</div>
+							<div class="contentContainer">
+								<div id="content" class="village1"><map name="rx" id="rx">
+<area href="build.php?id=1" coords="190,88,28" shape="circle" title="&lt;b&gt;Skogshuggare&lt;/b&gt;||Nivå 0" alt="Skogshuggare Nivå 0"/><area href="build.php?id=2" coords="280,89,28" shape="circle" title="&lt;b&gt;Vetefält&lt;/b&gt;||Nivå 0" alt="Vetefält Nivå 0"/><area href="build.php?id=3" coords="348,101,28" shape="circle" title="&lt;b&gt;Skogshuggare&lt;/b&gt;||Nivå 0" alt="Skogshuggare Nivå 0"/><area href="build.php?id=4" coords="132,127,28" shape="circle" title="&lt;b&gt;Järngruva&lt;/b&gt;||Nivå 0" alt="Järngruva Nivå 0"/><area href="build.php?id=5" coords="245,140,28" shape="circle" title="&lt;b&gt;Lergrop&lt;/b&gt;||Nivå 0" alt="Lergrop Nivå 0"/><area href="build.php?id=6" coords="302,147,28" shape="circle" title="&lt;b&gt;Lergrop&lt;/b&gt;||Nivå 0" alt="Lergrop Nivå 0"/><area href="build.php?id=7" coords="387,145,28" shape="circle" title="&lt;b&gt;Järngruva&lt;/b&gt;||Nivå 0" alt="Järngruva Nivå 0"/><area href="build.php?id=8" coords="72,178,28" shape="circle" title="&lt;b&gt;Vetefält&lt;/b&gt;||Nivå 0" alt="Vetefält Nivå 0"/><area href="build.php?id=9" coords="153,179,28" shape="circle" title="&lt;b&gt;Vetefält&lt;/b&gt;||Nivå 0" alt="Vetefält Nivå 0"/><area href="build.php?id=10" coords="343,179,28" shape="circle" title="&lt;b&gt;Järngruva&lt;/b&gt;||Nivå 0" alt="Järngruva Nivå 0"/><area href="build.php?id=11" coords="430,179,28" shape="circle" title="&lt;b&gt;Järngruva&lt;/b&gt;||Nivå 0" alt="Järngruva Nivå 0"/><area href="build.php?id=12" coords="80,239,28" shape="circle" title="&lt;b&gt;Vetefält&lt;/b&gt;||Nivå 0" alt="Vetefält Nivå 0"/><area href="build.php?id=13" coords="153,229,28" shape="circle" title="&lt;b&gt;Vetefält&lt;/b&gt;||Nivå 0" alt="Vetefält Nivå 0"/><area href="build.php?id=14" coords="289,265,28" shape="circle" title="&lt;b&gt;Skogshuggare&lt;/b&gt;||Nivå 1" alt="Skogshuggare Nivå 1"/><area href="build.php?id=15" coords="411,234,28" shape="circle" title="&lt;b&gt;Vetefält&lt;/b&gt;||Nivå 0" alt="Vetefält Nivå 0"/><area href="build.php?id=16" coords="184,319,28" shape="circle" title="&lt;b&gt;Lergrop&lt;/b&gt;||Nivå 0" alt="Lergrop Nivå 0"/><area href="build.php?id=17" coords="275,324,28" shape="circle" title="&lt;b&gt;Skogshuggare&lt;/b&gt;||Nivå 0" alt="Skogshuggare Nivå 0"/><area href="build.php?id=18" coords="365,301,28" shape="circle" title="&lt;b&gt;Lergrop&lt;/b&gt;||Nivå 0" alt="Lergrop Nivå 0"/><area href="dorf2.php" coords="250,191,32" shape="circle"
+		title="Byggnader" alt="" />
+</map>
+
+<div id="village_map" class="f3">
+	<div class='level' style='left:278px;top:256px;'>1</div>
+	<img id="resfeld" usemap="#rx" src="img/x.gif" alt="" />
+<div id="village_circles"></div>
+
+</div>
+
+<div class="boxes buildingList"><div class="boxes-tl"></div><div class="boxes-tr"></div><div class="boxes-tc"></div><div class="boxes-ml"></div><div class="boxes-mr"></div><div class="boxes-mc"></div><div class="boxes-bl"></div><div class="boxes-br"></div><div class="boxes-bc"></div><div class="boxes-contents cf">
+			<table cellpadding="1" cellspacing="1" id="building_contract">
+				<thead>
+					<tr>
+						<th colspan="4">Byggnad:</th>
+					</tr>
+				</thead>
+			<tbody>
+		<tr><td class="ico"><a href="?d=211438&amp;a=0&amp;c=a4811a"><img src="img/x.gif" class="del" title="avbryt" alt="avbryt" /></a></td><td>Vetefält <span class="lvl"> Nivå 1</span></td><td colspan="2" class='buildingTime'><span id="timer1">0:01:18</span> tim Färdig vid 06:47</td>
+</tr><tr><td class="ico"><a href="?d=211442&amp;a=0&amp;c=a4811a"><img src="img/x.gif" class="del" title="avbryt" alt="avbryt" /></a></td><td>Samlingsplats <span class="lvl"> Nivå 1</span></td><td colspan="2" class='buildingTime'><span id="timer2">0:34:38</span> tim Färdig vid 07:21</td>
+</tr></tbody>
+		</table>	</div>
+				</div><script type="text/javascript">var bld=[{"stufe":1,"gid":"4","aid":"15"},{"stufe":1,"gid":"16","aid":"39"}]</script>
+<div id="map_details">
+	<div class="movements"></div><div class="boxes villageList production"><div class="boxes-tl"></div><div class="boxes-tr"></div><div class="boxes-tc"></div><div class="boxes-ml"></div><div class="boxes-mr"></div><div class="boxes-mc"></div><div class="boxes-bl"></div><div class="boxes-br"></div><div class="boxes-bc"></div><div class="boxes-contents cf"><table id="production" cellpadding="1" cellspacing="1">
+	<thead>
+		<tr>
+			<th colspan="4">
+				Produktion per timme:			</th>
+		</tr>
+	</thead>
+	<tbody>
+				<tr>
+			<td class="ico">
+				<img class="r1" src="img/x.gif" alt="Trä" title="Trä" />
+			</td>
+			<td class="res">
+				Trä:
+			</td>
+			<td class="num">
+				23			</td>
+		</tr>
+				<tr>
+			<td class="ico">
+				<img class="r2" src="img/x.gif" alt="Lera" title="Lera" />
+			</td>
+			<td class="res">
+				Lera:
+			</td>
+			<td class="num">
+				20			</td>
+		</tr>
+				<tr>
+			<td class="ico">
+				<img class="r3" src="img/x.gif" alt="Järn" title="Järn" />
+			</td>
+			<td class="res">
+				Järn:
+			</td>
+			<td class="num">
+				20			</td>
+		</tr>
+				<tr>
+			<td class="ico">
+				<img class="r4" src="img/x.gif" alt="Vete" title="Vete" />
+			</td>
+			<td class="res">
+				Vete:
+			</td>
+			<td class="num">
+				14			</td>
+		</tr>
+			</tbody>
+</table>
+	</div>
+				</div>
+<div class="boxes villageList units"><div class="boxes-tl"></div><div class="boxes-tr"></div><div class="boxes-tc"></div><div class="boxes-ml"></div><div class="boxes-mr"></div><div class="boxes-mc"></div><div class="boxes-bl"></div><div class="boxes-br"></div><div class="boxes-bc"></div><div class="boxes-contents cf"><table id="troops" cellpadding="1" cellspacing="1">
+<thead><tr>
+	<th colspan="3">Trupper:</th>
+</tr></thead><tbody>
+				<tr>
+				<td class="ico"><a href="build.php?gid=16#td"><img class="unit uhero" src="img/x.gif" alt="Hjälte" title="Hjälte" /></a></td>
+				<td class="num">1</td>
+				<td class="un">Hjälte</td>
+			</tr>
+		</tbody></table>
+	</div>
+				</div>	<div class="clear"></div>
+</div>
+<div class="clear"></div>
+								<div class="clear">&nbsp;</div>							</div>							<div class="clear"></div>
+						</div> 						<div class="contentFooter">&nbsp;</div>
+					</div>					<div id="side_info">
+		<div class="sideInfoHero">
+	<img id="heroImage" src="hero_image.php?uid=9171&amp;size=sideinfo&amp;9083fe737e6860875fc0340a21c07cb3" class="heroImage" title="Hjälte" alt="Hjälte" />
+	<div class="heroImageBorder"></div>
+	<a id="heroProfile" href="hero_inventory.php" class="heroProfile"></a>
+	<a href="hero_adventure.php" class="adventures" title="Äventyr"></a>
+	<a href="hero_auction.php" class="auctions" title="Auktion(er)"></a>
+</div>
+
+<script type="text/javascript">
+	window.addEvent('domready', function()
+	{
+		var element = $('heroProfile');
+		if (!element)
+		{
+			return;
+		}
+		var fnHeroTitle = function()
+		{
+			element.removeEvent('mouseover', fnHeroTitle);
+			Travian.ajax(
+			{
+				data:
+				{
+					cmd: 'getHeroStatus'
+				},
+				onSuccess: function(data)
+				{
+					element.setTitle(data.statusInfoText);
+					Travian.Tip.show(data.statusInfoText);
+				}
+			});
+		};
+		element.addEvent('mouseover', fnHeroTitle);
+	});
+</script>	<div class="sideInfoPlayer">
+	<a class="signLink" href="spieler.php?uid=9171" title="Profil">
+		<span class="wrap">Esr</span>
+	</a>
+	<img class="nationBig nationBig3" title="Galler" alt="Galler" src="img/x.gif"/>
+</div>
+		<div id="villageList" class="listing">
+	<div class="head">
+	<a href="dorf3.php" accesskey="9" title="Byöversikt">Byar:</a>
+</div>
+<div class="list">
+	<ul>
+	
+		<li
+			class="entry active"
+			title=""
+		>
+			<a
+				href="?newdid=16727"
+				accesskey="b"				class="active"
+				title="&lt;span class=&quot;coordinates coordinatesWithText&quot;&gt;&lt;span class=&quot;coordText&quot;&gt;qwerty&lt;/span&gt;&lt;span class=&quot;coordinatesWrapper&quot;&gt;&lt;span class=&quot;coordinateX&quot;&gt;(-69&lt;/span&gt;&lt;span class=&quot;coordinatePipe&quot;&gt;|&lt;/span&gt;&lt;span class=&quot;coordinateY&quot;&gt;-36)&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;clear&quot;&gt;&lrm;&lt;/span&gt;"
+			>qwerty</a>
+		</li>
+		</ul>
+</div>
+<div class="foot">
+</div></div>
+	
+	</div>					<div class="clear"></div>
+				</div>
+				<div id="footer">
+					<div id="mfoot">
+						<a href="http://www.travian.se/" target="_blank">Start</a>
+						<a href="http://forum.travian.se" target="_blank">Forum</a>
+						<a href="http://www.travian.se/links.php" target="_blank">Länkar</a>
+						<a href="http://t4.answers.travian.se/" target="_blank">FAQ - Answers</a>
+						<a href="http://www.travian.se/agb.php" target="_blank">Villkor</a>
+						<a href="http://www.travian.se/impressum.php" target="_blank">Imprint</a>
+						<div class="clear"></div>
+											</div>
+                    <p class="copyright">© 2004 - 2012 Travian Games GmbH</p>
+				</div>
+													<div id="stime" class="stime">
+	<div class="content-background-l">&nbsp;</div>
+	<div class="content-background-r">&nbsp;</div>
+	<div class="content peace peaceActive" title="Frid: 05.04.12 18:00 - 09.04.12 12:00">
+		<span class="icn">Servertid:</span>&nbsp;<span id="tp1">6:46:39</span>
+    </div>
+</div>					<div id="plusLink">
+	<div id="gs">
+		<p class="gold">
+			<a href="plus.php?id=3" title="Guld"><img src="img/x.gif" alt="Guld" class="gold" /><br />0</a>
+		</p>
+		<p class="silver">
+			<a href="hero_auction.php" title="Auktion(er)"><img src="img/x.gif" alt="Silver" class="silver" /><br />0</a>
+		</p>
+		<div class="clear"></div>
+	</div>
+    <div id="plus">
+    	<a href="plus.php" class="plusBtn" title="Plusmeny"><span class="plusBtn-l"><span class="plus_g">P</span><span class="plus_o">l</span><span class="plus_g">u</span><span class="plus_o">s</span></span><span class="plusBtn-r">&nbsp;</span></a>
+    </div>
+</div>
+<div class="clear"></div>					<ul id="res">
+		<li class="r1" title="Trä||produktion: 23">
+		<p>
+        	<img src="img/x.gif" alt="Trä"/>
+			<span id="l1" class="value ">690/800</span>
+		</p>
+				<div class="bar-bg">
+	        <div id="lbar1" class="bar" style="width:86%; background-color: #006900"></div>
+        </div>
+        	</li>
+		<li class="r2" title="Lera||produktion: 20">
+		<p>
+        	<img src="img/x.gif" alt="Lera"/>
+			<span id="l2" class="value ">610/800</span>
+		</p>
+				<div class="bar-bg">
+	        <div id="lbar2" class="bar" style="width:76%; background-color: #006900"></div>
+        </div>
+        	</li>
+		<li class="r3" title="Järn||produktion: 20">
+		<p>
+        	<img src="img/x.gif" alt="Järn"/>
+			<span id="l3" class="value ">710/800</span>
+		</p>
+				<div class="bar-bg">
+	        <div id="lbar3" class="bar" style="width:89%; background-color: #006900"></div>
+        </div>
+        	</li>
+		<li class="r4" title="Vete||produktion: 14">
+		<p>
+        	<img src="img/x.gif" alt="Vete"/>
+			<span id="l4" class="value ">730/800</span>
+		</p>
+				<div class="bar-bg">
+	        <div id="lbar4" class="bar" style="width:91%; background-color: #006900"></div>
+        </div>
+        	</li>
+		<li class="r5" title="Vetebalans||konsumtion / produktion">
+		<p>
+        	<img src="img/x.gif" alt="Veteåtgång"/>
+			<span id="l5" class="value ">10/24</span>
+		</p>
+			</li>
+	</ul>
+<div class="clear"></div>
+
+<script type="text/javascript">
+	resources.production = {
+					'l1': 23,					'l2': 20,					'l3': 20,					'l4': 14			};
+</script>					<div id="villageName">
+	<div class="clickable" ondblclick="Travian.Game.showEditVillageDialog('Ändra bynamn.', 'Nytt bynamn:', 'Spara',16727);" title="Dubbelklicka för att ändra namnet på byn." >
+		<span id="villageNameField">qwerty</span><br/>
+		<span class="loyalty high">
+			Lojalitet: 100%
+		</span>
+	</div>
+</div>
+					<div class="questMaster">
+	
+		<div id="anm" style="width:120px; height:140px; visibility:hidden;"></div>
+		<div id="qge">
+			<img onclick="qst_handle();" src="img/x.gif" id="qgei" class="master nation3 active" title="Till uppdraget" alt="Till uppdraget" />
+		</div>
+		<script type="text/javascript">
+			quest.number = -4;
+			quest.last = 24;
+			cache_preload = new Image();
+			cache_preload.src = "img/x.gif";
+			cache_preload.className = "first_adventure";
+		</script></div>
+
+<script type="text/javascript">
+	Travian.Translation.add(
+	{
+		'close' : 'stäng'
+	});
+</script>
+					<div id="sideInfoCountdown">
+	<div class="head"></div>
+	<div class="content">
+			Du har fortfarande
+		<span id="timer3">52:41:25</span> timmar kvar av nybörjarskyddet.	
+	</div>
+</div>
+								<div id="anwersQuestionMark">
+	<a href="http://t4.answers.travian.se/index.php?aid=26#go2answer" target="_blank" title="Travian Answers">&nbsp;</a>
+</div>			</div>
+
+			<div id="ce"></div>
+														</div>
+
+		
+			</body>
+</html>

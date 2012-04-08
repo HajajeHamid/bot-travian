@@ -15,8 +15,8 @@ public class HttpWorker {
     
     protected String[][] head;
     protected String html;
-    private String host;
-    private int port;
+    protected  String host;
+    protected  int port;
     private BufferedReader in;
     private PrintWriter  out;
     protected int error;

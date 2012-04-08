@@ -40,7 +40,7 @@ public class Connection extends HttpWorker {
 
             makeConnect("GET "+url+" HTTP/1.1", "");
             Logger.trace("GET "+url+" HTTP/1.1");
-            Logger.trace(html);
+            
             return html;
 
     }
