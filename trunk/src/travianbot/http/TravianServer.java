@@ -1,6 +1,9 @@
 package travianbot.http;
 
-import travianbot.Logger;
+import java.util.ArrayList;
+import java.util.List;
+import tools.RegexpUtils;
+import travianbot.game.FileWorker;
 
 /**
  *
@@ -63,6 +66,39 @@ public class TravianServer extends Connection{
     public int getPort(){
     
         return port;
+    }
+    
+    public void changeVillage(int id){
+        
+        //rec("dorf1.php?newdid="+id);
+    
+    }
+    
+    public String getHtml(){
+    
+        return html;
+    
+    }
+    
+    public void buildField(int id){
+    
+               // rec("build.php?id="+id);
+		String html = FileWorker.get_file("bildField");
+		List<List<String>> link = new ArrayList<List<String>>();
+		RegexpUtils.preg_match_all("/class=\"build\" onclick=\"window.location.href = '(.+?)'; return false;\"/", html, link);
+		String l = link.get(0).get(1).replaceAll("&amp;", "&");
+                System.out.println(l);
+               // rec(l);
+		/*if(link.size()>0){
+			
+			String l = link.get(0).get(1).replaceAll("&amp;", "&");
+			System.out.println(l);
+			return 1;
+			
+		}else{
+			return -1;
+		}*/
+    
     }
     
 }
