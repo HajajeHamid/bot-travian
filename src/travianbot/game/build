@@ -25,7 +25,7 @@ Travian.Game.worldId = 'se44';
 			Travian.Game.eventJamHtml = '&lt;a href=&quot;http://t4.answers.travian.se/index.php?aid=249#go2answer&quot; target=&quot;blank&quot; title=&quot;Travian Answers&quot;&gt;&lt;span class=&quot;c0 t&quot;&gt;0:00:0&lt;/span&gt;?&lt;/a&gt;'.unescapeHtml();
 		</script>
 					</head>
-	<body class="v35 gecko village1">
+	<body class="v35 gecko build gidRessources">
 							<div id="wrapper">
 								<img id="staticElements" src="img/x.gif" alt="" />
 									<div id="logoutContainer">
@@ -41,7 +41,7 @@ Travian.Game.worldId = 'se44';
 															</div>
 																					<ul id="navigation">
 					        	<li id="n1" class="resources">
-					        		<a class=" active" href="dorf1.php" accesskey="1" title="Råvaror"></a>
+					        		<a class="" href="dorf1.php" accesskey="1" title="Råvaror"></a>
 					        	</li>
 					            <li id="n2" class="village">
 					            	<a class="" href="dorf2.php" accesskey="2" title="Byggnader"></a>
@@ -72,106 +72,29 @@ Travian.Game.worldId = 'se44';
 						<div id="contentOuterContainer">
 							<div class="contentTitle">&nbsp;</div>
 							<div class="contentContainer">
-								<div id="content" class="village1"><map name="rx" id="rx">
-<area href="build.php?id=1" coords="190,88,28" shape="circle" title="&lt;b&gt;Skogshuggare&lt;/b&gt;||Nivå 0" alt="Skogshuggare Nivå 0"/><area href="build.php?id=2" coords="280,89,28" shape="circle" title="&lt;b&gt;Vetefält&lt;/b&gt;||Nivå 0" alt="Vetefält Nivå 0"/><area href="build.php?id=3" coords="348,101,28" shape="circle" title="&lt;b&gt;Skogshuggare&lt;/b&gt;||Nivå 0" alt="Skogshuggare Nivå 0"/><area href="build.php?id=4" coords="132,127,28" shape="circle" title="&lt;b&gt;Järngruva&lt;/b&gt;||Nivå 0" alt="Järngruva Nivå 0"/><area href="build.php?id=5" coords="245,140,28" shape="circle" title="&lt;b&gt;Lergrop&lt;/b&gt;||Nivå 1" alt="Lergrop Nivå 1"/><area href="build.php?id=6" coords="302,147,28" shape="circle" title="&lt;b&gt;Lergrop&lt;/b&gt;||Nivå 0" alt="Lergrop Nivå 0"/><area href="build.php?id=7" coords="387,145,28" shape="circle" title="&lt;b&gt;Järngruva&lt;/b&gt;||Nivå 0" alt="Järngruva Nivå 0"/><area href="build.php?id=8" coords="72,178,28" shape="circle" title="&lt;b&gt;Vetefält&lt;/b&gt;||Nivå 0" alt="Vetefält Nivå 0"/><area href="build.php?id=9" coords="153,179,28" shape="circle" title="&lt;b&gt;Vetefält&lt;/b&gt;||Nivå 0" alt="Vetefält Nivå 0"/><area href="build.php?id=10" coords="343,179,28" shape="circle" title="&lt;b&gt;Järngruva&lt;/b&gt;||Nivå 0" alt="Järngruva Nivå 0"/><area href="build.php?id=11" coords="430,179,28" shape="circle" title="&lt;b&gt;Järngruva&lt;/b&gt;||Nivå 0" alt="Järngruva Nivå 0"/><area href="build.php?id=12" coords="80,239,28" shape="circle" title="&lt;b&gt;Vetefält&lt;/b&gt;||Nivå 0" alt="Vetefält Nivå 0"/><area href="build.php?id=13" coords="153,229,28" shape="circle" title="&lt;b&gt;Vetefält&lt;/b&gt;||Nivå 0" alt="Vetefält Nivå 0"/><area href="build.php?id=14" coords="289,265,28" shape="circle" title="&lt;b&gt;Skogshuggare&lt;/b&gt;||Nivå 1" alt="Skogshuggare Nivå 1"/><area href="build.php?id=15" coords="411,234,28" shape="circle" title="&lt;b&gt;Vetefält&lt;/b&gt;||Nivå 1" alt="Vetefält Nivå 1"/><area href="build.php?id=16" coords="184,319,28" shape="circle" title="&lt;b&gt;Lergrop&lt;/b&gt;||Nivå 0" alt="Lergrop Nivå 0"/><area href="build.php?id=17" coords="275,324,28" shape="circle" title="&lt;b&gt;Skogshuggare&lt;/b&gt;||Nivå 0" alt="Skogshuggare Nivå 0"/><area href="build.php?id=18" coords="365,301,28" shape="circle" title="&lt;b&gt;Lergrop&lt;/b&gt;||Nivå 1" alt="Lergrop Nivå 1"/><area href="dorf2.php" coords="250,191,32" shape="circle"
-		title="Byggnader" alt="" />
-</map>
+								<div id="content" class="build gidRessources">
+<h1 class="titleInHeader">Skogshuggare <span class="level">Nivå 0</span></h1>
+<div id="build" class="gid1">
+<div class="build_desc">
+	<a href="#" onclick="return Travian.Game.iPopup(1,4, 'gid');" class="build_logo">
+		<img class="building big white g1" src="img/x.gif" alt="Skogshuggare" title="Skogshuggare" />
+	</a>
+		Skogshuggare hugger ned träd för att producera timmer. Ju mer du bygger upp skogshuggaren desto mer timmer kommer han att producera.</div>
 
-<div id="village_map" class="f3">
-	<div class='level' style='left:234px;top:131px;'>1</div>
-<div class='level' style='left:278px;top:256px;'>1</div>
-<div class='level' style='left:400px;top:225px;'>1</div>
-<div class='level' style='left:354px;top:292px;'>1</div>
-	<img id="resfeld" usemap="#rx" src="img/x.gif" alt="" />
-<div id="village_circles"></div>
 
-</div>
-
-<div class="boxes buildingList"><div class="boxes-tl"></div><div class="boxes-tr"></div><div class="boxes-tc"></div><div class="boxes-ml"></div><div class="boxes-mr"></div><div class="boxes-mc"></div><div class="boxes-bl"></div><div class="boxes-br"></div><div class="boxes-bc"></div><div class="boxes-contents cf">
-			<table cellpadding="1" cellspacing="1" id="building_contract">
-				<thead>
-					<tr>
-						<th colspan="4">Byggnad:</th>
-					</tr>
-				</thead>
-			<tbody>
-		<tr><td class="ico"><a href="?d=215409&amp;a=0&amp;c=c4dab3"><img src="img/x.gif" class="del" title="avbryt" alt="avbryt" /></a></td><td>Lergrop <span class="lvl"> Nivå 1</span></td><td colspan="2" class='buildingTime'><span id="timer1">0:03:37</span> tim Färdig vid 11:49</td>
-</tr></tbody>
-		</table>	</div>
-				</div><script type="text/javascript">var bld=[{"stufe":1,"gid":"2","aid":"16"}]</script>
-<div id="map_details">
-	<div class="movements"></div><div class="boxes villageList production"><div class="boxes-tl"></div><div class="boxes-tr"></div><div class="boxes-tc"></div><div class="boxes-ml"></div><div class="boxes-mr"></div><div class="boxes-mc"></div><div class="boxes-bl"></div><div class="boxes-br"></div><div class="boxes-bc"></div><div class="boxes-contents cf"><table id="production" cellpadding="1" cellspacing="1">
-	<thead>
-		<tr>
-			<th colspan="4">
-				Produktion per timme:			</th>
-		</tr>
-	</thead>
-	<tbody>
-				<tr>
-			<td class="ico">
-				<img class="r1" src="img/x.gif" alt="Trä" title="Trä" />
-			</td>
-			<td class="res">
-				Trä:
-			</td>
-			<td class="num">
-				23			</td>
-		</tr>
-				<tr>
-			<td class="ico">
-				<img class="r2" src="img/x.gif" alt="Lera" title="Lera" />
-			</td>
-			<td class="res">
-				Lera:
-			</td>
-			<td class="num">
-				26			</td>
-		</tr>
-				<tr>
-			<td class="ico">
-				<img class="r3" src="img/x.gif" alt="Järn" title="Järn" />
-			</td>
-			<td class="res">
-				Järn:
-			</td>
-			<td class="num">
-				20			</td>
-		</tr>
-				<tr>
-			<td class="ico">
-				<img class="r4" src="img/x.gif" alt="Vete" title="Vete" />
-			</td>
-			<td class="res">
-				Vete:
-			</td>
-			<td class="num">
-				8			</td>
-		</tr>
-			</tbody>
+<table cellpadding="1" cellspacing="1" id="build_value">
+	<tr>
+		<th>Nuvarande produktion:</th>
+		<td><b>2</b> per timme</td>
+	</tr>
+	<tr>
+		<th>Produktion på nivå 1:</th>
+		<td><b>5</b> per timme</td>
+	</tr>
 </table>
-	</div>
-				</div>
-<div class="boxes villageList units"><div class="boxes-tl"></div><div class="boxes-tr"></div><div class="boxes-tc"></div><div class="boxes-ml"></div><div class="boxes-mr"></div><div class="boxes-mc"></div><div class="boxes-bl"></div><div class="boxes-br"></div><div class="boxes-bc"></div><div class="boxes-contents cf"><table id="troops" cellpadding="1" cellspacing="1">
-<thead><tr>
-	<th colspan="3">Trupper:</th>
-</tr></thead><tbody>
-				<tr>
-				<td class="ico"><a href="build.php?gid=16#td"><img class="unit uhero" src="img/x.gif" alt="Hjälte" title="Hjälte" /></a></td>
-				<td class="num">1</td>
-				<td class="un">Hjälte</td>
-			</tr>
-						<tr>
-					<td class="ico"><a href="build.php?gid=16#td"><img class="unit u21" src="img/x.gif" alt="Falanxer" title="Falanxer" /></a></td>
-					<td class="num">3</td>
-					<td class="un">Falanxer</td>
-				</tr>
-			</tbody></table>
-	</div>
-				</div>	<div class="clear"></div>
-</div>
-<div class="clear"></div>
-								<div class="clear">&nbsp;</div>							</div>							<div class="clear"></div>
+
+<div id="contract" class="contractWrapper"><div class="contractText"><b>Kostnad</b> för att uppgradera till nivå 1:</div><div class="contractCosts"><div class="showCosts"><span class="resources r1" title="Trä"><img class="r1" src="img/x.gif" alt="Trä" />40</span><span class="resources r2" title="Lera"><img class="r2" src="img/x.gif" alt="Lera" />100</span><span class="resources r3" title="Järn"><img class="r3" src="img/x.gif" alt="Järn" />50</span><span class="resources r4" title="Vete"><img class="r4" src="img/x.gif" alt="Vete" />60</span><span class="resources r5" title="Veteåtgång"><img class="r5" src="img/x.gif" alt="Veteåtgång" />2</span><div class="clear"></div><span class="clocks" title="varaktighet"><img class="clock" src="img/x.gif" alt="varaktighet" />0:04:20</span><div class="clear"></div></div></div><div class="contractLink"><button type="button" value="Uppgradera till nivå 1" class="build" onclick="window.location.href = 'dorf1.php?a=17&amp;c=85317a'; return false;"><div class="button-container"><div class="button-position"><div class="btl"><div class="btr"><div class="btc"></div></div></div><div class="bml"><div class="bmr"><div class="bmc"></div></div></div><div class="bbl"><div class="bbr"><div class="bbc"></div></div></div></div><div class="button-contents">Uppgradera till nivå 1</div></div></button></div></div><div class="clear"></div>
+</div>								<div class="clear">&nbsp;</div>							</div>							<div class="clear"></div>
 						</div> 						<div class="contentFooter">&nbsp;</div>
 					</div>					<div id="side_info">
 		<div class="sideInfoHero">
@@ -226,7 +149,7 @@ Travian.Game.worldId = 'se44';
 			title=""
 		>
 			<a
-				href="?newdid=16727"
+				href="?newdid=16727&amp;id=17"
 				accesskey="b"				class="active"
 				title="&lt;span class=&quot;coordinates coordinatesWithText&quot;&gt;&lt;span class=&quot;coordText&quot;&gt;qwerty&lt;/span&gt;&lt;span class=&quot;coordinatesWrapper&quot;&gt;&lt;span class=&quot;coordinateX&quot;&gt;(-69&lt;/span&gt;&lt;span class=&quot;coordinatePipe&quot;&gt;|&lt;/span&gt;&lt;span class=&quot;coordinateY&quot;&gt;-36)&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;clear&quot;&gt;&lrm;&lt;/span&gt;"
 			>qwerty</a>
@@ -254,7 +177,7 @@ Travian.Game.worldId = 'se44';
 	<div class="content-background-l">&nbsp;</div>
 	<div class="content-background-r">&nbsp;</div>
 	<div class="content peace peaceActive" title="Frid: 05.04.12 18:00 - 09.04.12 12:00">
-		<span class="icn">Servertid:</span>&nbsp;<span id="tp1">11:45:29</span>
+		<span class="icn">Servertid:</span>&nbsp;<span id="tp1">12:02:31</span>
     </div>
 </div>					<div id="plusLink">
 	<div id="gs">
@@ -274,34 +197,34 @@ Travian.Game.worldId = 'se44';
 		<li class="r1" title="Trä||produktion: 23">
 		<p>
         	<img src="img/x.gif" alt="Trä"/>
-			<span id="l1" class="value ">524/800</span>
+			<span id="l1" class="value ">531/800</span>
 		</p>
 				<div class="bar-bg">
 	        <div id="lbar1" class="bar" style="width:66%; background-color: #006900"></div>
         </div>
         	</li>
-		<li class="r2" title="Lera||produktion: 26">
+		<li class="r2" title="Lera||produktion: 29">
 		<p>
         	<img src="img/x.gif" alt="Lera"/>
-			<span id="l2" class="value ">551/800</span>
+			<span id="l2" class="value ">559/800</span>
 		</p>
 				<div class="bar-bg">
-	        <div id="lbar2" class="bar" style="width:69%; background-color: #006900"></div>
+	        <div id="lbar2" class="bar" style="width:70%; background-color: #006900"></div>
         </div>
         	</li>
 		<li class="r3" title="Järn||produktion: 20">
 		<p>
         	<img src="img/x.gif" alt="Järn"/>
-			<span id="l3" class="value ">529/800</span>
+			<span id="l3" class="value ">534/800</span>
 		</p>
 				<div class="bar-bg">
-	        <div id="lbar3" class="bar" style="width:66%; background-color: #006900"></div>
+	        <div id="lbar3" class="bar" style="width:67%; background-color: #006900"></div>
         </div>
         	</li>
-		<li class="r4" title="Vete||produktion: 8">
+		<li class="r4" title="Vete||produktion: 6">
 		<p>
         	<img src="img/x.gif" alt="Vete"/>
-			<span id="l4" class="value ">650/1200</span>
+			<span id="l4" class="value ">651/1200</span>
 		</p>
 				<div class="bar-bg">
 	        <div id="lbar4" class="bar" style="width:54%; background-color: #006900"></div>
@@ -310,7 +233,7 @@ Travian.Game.worldId = 'se44';
 		<li class="r5" title="Vetebalans||konsumtion / produktion">
 		<p>
         	<img src="img/x.gif" alt="Veteåtgång"/>
-			<span id="l5" class="value ">19/27</span>
+			<span id="l5" class="value ">21/27</span>
 		</p>
 			</li>
 	</ul>
@@ -318,7 +241,7 @@ Travian.Game.worldId = 'se44';
 
 <script type="text/javascript">
 	resources.production = {
-					'l1': 23,					'l2': 26,					'l3': 20,					'l4': 8			};
+					'l1': 23,					'l2': 29,					'l3': 20,					'l4': 6			};
 </script>					<div id="villageName">
 	<div class="clickable" ondblclick="Travian.Game.showEditVillageDialog('Ändra bynamn.', 'Nytt bynamn:', 'Spara',16727);" title="Dubbelklicka för att ändra namnet på byn." >
 		<span id="villageNameField">qwerty</span><br/>
@@ -351,11 +274,11 @@ Travian.Game.worldId = 'se44';
 	<div class="head"></div>
 	<div class="content">
 			Du har fortfarande
-		<span id="timer2">47:42:35</span> timmar kvar av nybörjarskyddet.	
+		<span id="timer1">47:25:33</span> timmar kvar av nybörjarskyddet.	
 	</div>
 </div>
 								<div id="anwersQuestionMark">
-	<a href="http://t4.answers.travian.se/index.php?aid=26#go2answer" target="_blank" title="Travian Answers">&nbsp;</a>
+	<a href="http://t4.answers.travian.se/index.php?aid=195#go2answer" target="_blank" title="Travian Answers">&nbsp;</a>
 </div>			</div>
 
 			<div id="ce"></div>
