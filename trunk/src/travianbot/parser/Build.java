@@ -35,7 +35,7 @@ public class Build {
         
          resurses[i-1]=Integer.parseInt(res.trim());
     }
-    } 
+    }
     
     public void parseTime(){
         

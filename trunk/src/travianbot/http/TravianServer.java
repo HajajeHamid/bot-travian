@@ -70,7 +70,7 @@ public class TravianServer extends Connection{
     
     public void changeVillage(int id){
         
-        //rec("dorf1.php?newdid="+id);
+        rec("dorf1.php?newdid="+id);
     
     }
     
@@ -82,13 +82,13 @@ public class TravianServer extends Connection{
     
     public void buildField(int id){
     
-               // rec("build.php?id="+id);
+               rec("build.php?id="+id);
 		String html = FileWorker.get_file("bildField");
 		List<List<String>> link = new ArrayList<List<String>>();
 		RegexpUtils.preg_match_all("/class=\"build\" onclick=\"window.location.href = '(.+?)'; return false;\"/", html, link);
 		String l = link.get(0).get(1).replaceAll("&amp;", "&");
                 System.out.println(l);
-               // rec(l);
+                rec(l);
 		/*if(link.size()>0){
 			
 			String l = link.get(0).get(1).replaceAll("&amp;", "&");
@@ -98,6 +98,13 @@ public class TravianServer extends Connection{
 		}else{
 			return -1;
 		}*/
+    
+    }
+    
+    public String getBuildInfo(int id){
+        
+        rec("build.php?id="+id);
+        return html;
     
     }
     

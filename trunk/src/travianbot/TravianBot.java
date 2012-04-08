@@ -48,7 +48,7 @@ public class TravianBot {
             countGames = games.size();
             Logger.info("Loaded "+countGames+" games");
             
-           /* while(true){
+            while(true){
             
                 for(int i=0;i<countGames;i++){
                     
@@ -56,7 +56,7 @@ public class TravianBot {
                     
                 }  
             
-            }*/
+            }
             
             
         } catch (ConfigValueNotFoundException ex) {
