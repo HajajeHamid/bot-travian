@@ -42,4 +42,27 @@ public class TravianServer extends Connection{
     
     }
     
+    public String getHost(){
+        
+        return host;
+    
+    }
+    
+    public String getUserName(){
+    
+        return username;
+    
+    }
+    
+    public String getPassword(){
+    
+        return password;
+    
+    }
+    
+    public int getPort(){
+    
+        return port;
+    }
+    
 }
