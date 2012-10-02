@@ -1,0 +1,5 @@
+LoggerToFile=false
+LoggerToConsole=true
+LoggerMode=31
+
+UsersInfo=UsersInfo.cnf
