@@ -202,7 +202,7 @@ public class HttpWorker {
             String html = "";
 
             out.println(request);
-
+System.out.println(request);
             ArrayList<Header> gottenHeadsList = new ArrayList<Header>();
 
             boolean isNowHeaders = false;
@@ -234,9 +234,11 @@ public class HttpWorker {
 
                 } else {
 
-                    html += response + "\n";
+                    html += response;
 
                 }
+                
+                
 
             }
 
@@ -255,9 +257,6 @@ public class HttpWorker {
 
             updateCookie(localCookies);
 
-            for (int i = 0; i < cookies.length; i++) {
-                System.out.println(cookies[i].name + " " + cookies[i].value);
-            }
 
         } catch (UnknownHostException ex) {
             Logger.log.error("Неизвестный хост при загрузке страницы Побробнее " + ex.getMessage());

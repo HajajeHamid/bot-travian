@@ -24,35 +24,40 @@ public class TravianConnector extends Connection{
         
 	//String login = getInput("login");
 	
-        RequestData[] values = new RequestData[4];
+        RequestData[] values = new RequestData[5];
         
         values[0] = new RequestData();
         values[0].name="name";     values[0].value=username;
         values[1] = new RequestData();
 	values[1].name="password"; values[1].value=password;
         values[2] = new RequestData();
-	values[2].name="login";    //values[2].value=login;
+	values[2].name="login";    values[2].value="123456";
         values[3] = new RequestData();
 	values[3].name="w";        values[3].value="1280:1024";
-        
+        values[4] = new RequestData();
+	values[4].name="s1";        values[3].value="Login";
         
 	post("/dorf1.php", values);
         
-        throw new TravianLowerErrorException("Не возможно залогинеться");
-         
-        //return true;
+        //throw new TravianLowerErrorException("Не возможно залогинеться");
+        //TODO: Сделать проверку 
+        return true;
     
     }
     
-    public String getDorf1Source(){
+    public String getDorf1Source() throws TravianLowerErrorException{
         
-        return null;
+        get("/dorf1.php",null);
+        
+        return getLastRequestResult().getHtml();
     
     }
     
-    public String getDorf2Source(){
+    public String getDorf2Source() throws TravianLowerErrorException{
         
-        return null;
+        get("/dorf2.php",null);
+        
+        return getLastRequestResult().getHtml();
     
     }
     
@@ -70,6 +75,16 @@ public class TravianConnector extends Connection{
     
     public void sendArmy(){
     
+    }
+
+    public String changeVillage(int id) throws TravianLowerErrorException {
+        
+        RequestData[] requestDatas = new RequestData[1];
+        requestDatas[0] = new RequestData("newdid", id+"");
+            
+        get("dorf1.php",requestDatas);
+        return getLastRequestResult().getHtml();
+        
     }
     
 }
