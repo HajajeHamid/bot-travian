@@ -1,11 +1,13 @@
 package com.midnightcold.travianbot.travianWorker;
 
+import com.midnightcold.travianbot.exception.TravianLowerErrorException;
+
 public class TravianConnector extends Connection{
     
     private String username;
     private String password;
     
-    public TravianConnector(String server, String username, String password){
+    public TravianConnector(String server, String username, String password) throws TravianLowerErrorException{
      
         super(server);
         
@@ -16,7 +18,7 @@ public class TravianConnector extends Connection{
         
     }
     
-    private boolean login(){
+    private boolean login() throws TravianLowerErrorException{
     
         get("/login.php",null);
         
@@ -36,9 +38,9 @@ public class TravianConnector extends Connection{
         
 	post("/dorf1.php", values);
         
-        // TODO проверка на самом деле не работает
+        throw new TravianLowerErrorException();
          
-        return true;
+        //return true;
     
     }
     

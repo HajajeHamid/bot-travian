@@ -2,6 +2,7 @@ package com.midnightcold.travianbot;
 
 import com.midnightcold.travianbot.entity.Account;
 import com.midnightcold.travianbot.exception.ConfigValueNotFoundException;
+import com.midnightcold.travianbot.exception.TravianLowerErrorException;
 import com.midnightcold.travianbot.system.Config;
 import com.midnightcold.travianbot.system.Logger;
 import java.io.BufferedReader;
@@ -9,6 +10,7 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
+import java.util.logging.Level;
 
 public class TravianBot {
 
@@ -91,18 +93,14 @@ public class TravianBot {
         Account[] accounts = new Account[usersInfo.length];
 
         for (int i = 0; i < accounts.length; i++) {
-            accounts[i] = new Account(usersInfo[i].host, usersInfo[i].username, usersInfo[i].password);
-            Logger.log.info("Создали аккаунт " + usersInfo[i].host + " " + usersInfo[i].username + " " + usersInfo[i].password);
+            try {
+                accounts[i] = new Account(usersInfo[i].host, usersInfo[i].username, usersInfo[i].password);
+                Logger.log.info("Создали аккаунт " + usersInfo[i].host + " " + usersInfo[i].username + " " + usersInfo[i].password);
+            }catch (TravianLowerErrorException ex) {
+                 accounts[i]=null;
+                 Logger.log.error("Не верный логин и пароль у аккаунта "+ usersInfo[i].host +"!");
+            }
         }
-
-        /*
-          //Главный цикл обработки событий while (true) {
-         
-          for (int i = 0; i < accounts.length; i++) { accounts[i].update(); }
-         
-         
-          }
-         */
 
     }
 
