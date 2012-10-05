@@ -34,7 +34,7 @@ public class TravianBot {
         path = "./config/" + path;
 
         ArrayList<UserInfo> usersInfoList = new ArrayList<UserInfo>();
-        UserInfo[] usersInfo = null;
+        UserInfo[] usersInfo;
 
         BufferedReader reader;
         InputStream inStream = TravianBot.class.getResourceAsStream(path);
@@ -57,7 +57,7 @@ public class TravianBot {
 
         }
         
-        usersInfo =   usersInfoList.toArray(new UserInfo[usersInfoList.size()]);
+        usersInfo = usersInfoList.toArray(new UserInfo[usersInfoList.size()]);
 
         return usersInfo;
 

@@ -38,6 +38,7 @@ public class Dorf1Parser {
         //Определяем тип деревни
 
         List<List<String>> regxType = new ArrayList<List<String>>();
+        
         RegexpUtils.preg_match_all("/<div id=\"village_map\" class=\"f[0-9]{1}\">/", html, regxType);
 
         String stringVillageType = regxType.get(0).get(0);
