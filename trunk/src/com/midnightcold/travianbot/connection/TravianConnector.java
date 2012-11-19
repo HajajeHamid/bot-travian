@@ -1,11 +1,16 @@
 package com.midnightcold.travianbot.connection;
 
+import com.midnightcold.travianbot.exceptions.ResourceException;
 import com.midnightcold.travianbot.exceptions.TravianLowerErrorException;
+import com.midnightcold.travianbot.parser.BuildParser;
+import com.midnightcold.travianbot.travian.Account;
+import com.midnightcold.travianbot.travian.Village;
 
 public class TravianConnector extends Connection{
     
     private String username;
     private String password;
+    private Account account;
     
     public TravianConnector(String server, String username, String password) throws TravianLowerErrorException{
      
@@ -61,7 +66,25 @@ public class TravianConnector extends Connection{
     
     }
     
-    public void upgradeField(int id){
+    public String upgradeField(int id) throws TravianLowerErrorException, ResourceException {
+        
+        RequestData[] requestDatas = new RequestData[1];
+        requestDatas[0] = new RequestData("id", id+"");
+            
+        get("/build.php",requestDatas);
+        
+        String html = getLastRequestResult().getHtml();
+        
+        int[] r = BuildParser.upgradeFieldResourse(html);
+        Village v = account.getCurrectVillage();
+        if(!(v.resources[0].amount>r[0] &&v.resources[1].amount>r[1] &&v.resources[2].amount>r[2] &&v.resources[3].amount>r[3])){
+           throw new ResourceException(); 
+        }
+        
+        String link = BuildParser.upgradeFieldLink(html);
+        get("/"+link, null);
+        return getLastRequestResult().getHtml();
+        
     
     }
     
@@ -85,6 +108,10 @@ public class TravianConnector extends Connection{
         get("/dorf1.php",requestDatas);
         return getLastRequestResult().getHtml();
         
+    }
+    
+    public void setAcount(Account account){
+        this.account = account;
     }
     
 }

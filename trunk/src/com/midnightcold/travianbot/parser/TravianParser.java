@@ -36,7 +36,7 @@ public class TravianParser {
         v.buildings = dorf2.buildings;
         v.fields = dorf1.fields;
         v.productions = dorf1.productions;
-        v.resourses = dorf1.resourses;
+        v.resources = dorf1.resourses;
         v.time = dorf1.time;
         v.troops = dorf1.troops;
         
