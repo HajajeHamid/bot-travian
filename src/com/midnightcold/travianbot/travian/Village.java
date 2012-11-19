@@ -7,9 +7,11 @@ public class Village {
     public Building[] buildings;
     public Field[] fields;
     public int time;
-    public Resource[] resourses;
+    public Resource[] resources;
     public Production[] productions;
     public Troop troops;
+    
+    
     
     @Override
     public String toString(){
@@ -29,9 +31,9 @@ public class Village {
          
         result += "Время которое прошло равно "+time+"с";
         
-        for(int i=0;i<resourses.length;i++){
+        for(int i=0;i<resources.length;i++){
             
-            result += "На складах ресурса "+resourses[i].type+" лежит "+resourses[i].amount+"\n";
+            result += "На складах ресурса "+resources[i].type+" лежит "+resources[i].amount+"\n";
         
         }
         
