@@ -82,7 +82,7 @@ public class TravianConnector extends Connection{
         RequestData[] requestDatas = new RequestData[1];
         requestDatas[0] = new RequestData("newdid", id+"");
             
-        get("dorf1.php",requestDatas);
+        get("/dorf1.php",requestDatas);
         return getLastRequestResult().getHtml();
         
     }

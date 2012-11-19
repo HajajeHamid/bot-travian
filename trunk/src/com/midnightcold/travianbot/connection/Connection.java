@@ -17,8 +17,9 @@ public class Connection extends HttpWorker{
         
         if(requestDatas != null && requestDatas.length !=0 ){
             dataString="?";
-            for(RequestData requestData: requestDatas)
-               dataString+=requestData.name + "=" + requestData.value + "&";
+            for(RequestData requestData: requestDatas) {
+                dataString+=requestData.name + "=" + requestData.value + "&";
+            }
             dataString = dataString.substring(0, dataString.length()-1);
         }
         try {
@@ -35,8 +36,9 @@ public class Connection extends HttpWorker{
         
         if(requestDatas != null && requestDatas.length !=0 ){
             
-            for(RequestData requestData: requestDatas)
-               dataString+=requestData.name + "=" + requestData.value + "&";
+            for(RequestData requestData: requestDatas) {
+                dataString+=requestData.name + "=" + requestData.value + "&";
+            }
             dataString = dataString.substring(0, dataString.length()-1);
         }
         try {

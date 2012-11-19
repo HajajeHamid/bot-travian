@@ -3,8 +3,10 @@ package com.midnightcold.travianbot.connection;
 import com.midnightcold.travianbot.exceptions.LoadHttpPageException;
 import com.midnightcold.travianbot.system.Logger;
 import java.io.BufferedReader;
+import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.io.OutputStreamWriter;
 import java.io.PrintWriter;
 import java.net.Socket;
 import java.net.UnknownHostException;
@@ -49,8 +51,8 @@ public class HttpWorker {
         for (int i = 0; i < headers.length; i++) {
 
             if (headers[i].name.equals("Set-Cookie")) {
-
-                String[] cookie = headers[i].value.split("=");
+                String[] onlyCookie = headers[i].value.split(";");
+                String[] cookie = onlyCookie[0].split("=");
                 cookiesList.add(new Cookie(cookie[0], cookie[1]));
 
             }
@@ -189,10 +191,13 @@ public class HttpWorker {
     protected void makeConnect(String method, String url, String messageBody) throws LoadHttpPageException {
         try {
 
+            PrintWriter writer = new PrintWriter(
+                    new OutputStreamWriter(
+                    new FileOutputStream("C:\\"+System.currentTimeMillis()+"_"+url.replace("/", "").replace("?", "")), "windows-1251"));
+            
+
             Socket socket = new Socket(host, port);
-
             BufferedReader in = new BufferedReader(new InputStreamReader(socket.getInputStream()));
-
             PrintWriter out = new PrintWriter(socket.getOutputStream(), true);
 
             String headsString = getHeadsAsString(messageBody);
@@ -202,7 +207,7 @@ public class HttpWorker {
             String html = "";
 
             out.println(request);
-System.out.println(request);
+            writer.println(request);
             ArrayList<Header> gottenHeadsList = new ArrayList<Header>();
 
             boolean isNowHeaders = false;
@@ -211,7 +216,7 @@ System.out.println(request);
             int code = 0;
 
             while ((response = in.readLine()) != null) {
-
+                writer.println(response);
                 if (firstString) {
 
                     String[] parts = response.split(" ");
@@ -237,11 +242,10 @@ System.out.println(request);
                     html += response;
 
                 }
-                
-                
 
             }
-
+            
+            writer.close();
             Header[] headers = gottenHeadsList.toArray(new Header[gottenHeadsList.size()]);
 
             Cookie[] localCookies = getCookieByHeaders(headers);
