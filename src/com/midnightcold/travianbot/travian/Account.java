@@ -10,7 +10,7 @@ import java.util.logging.Logger;
 public class Account {
     
     private TravianConnector connetion;
-    private Village[] villages;
+    private Village[] villages = new Village[0];
     private int gold;
     private int silver;
     private String hostname;
@@ -44,16 +44,16 @@ public class Account {
             this.silver = account.silver;
             
             int[] villagesId = account.villages;
-            
+             
             villages = new Village[villagesId.length];
-            
+           
             for(int i=0;i<villagesId.length;i++){
                 dorf1 = connetion.changeVillage(villagesId[i]);
                 dorf2 = connetion.getDorf2Source();
                 villages[i] = TravianParser.updateVillage(dorf1, dorf2);
             }
             
-            System.out.println(toString());
+        System.out.println(this.toString());
             
         } catch (TravianLowerErrorException ex) {
           //TODO: передовать на уровень выше
@@ -71,7 +71,7 @@ public class Account {
         result += "имеет "+gold+" золота и "+silver+" серебра\n";
         result += "У игрока "+villages.length+" деревень\n";
         for(int i=0;i<villages.length;i++){
-            result += "Деревня 123\n";
+            //result += "Деревня "+villages[i].+"\n";
             result += villages[i].toString() + "\n";
         }
                 

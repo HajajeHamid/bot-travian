@@ -8,12 +8,12 @@ import com.midnightcold.travianbot.travian.entity.Troop;
 public class Dorf1 {
     
     public int[] vilagesId;
-    public Field[] fields;
+    public Field[] fields = new Field[0];
     public int gold;
     public int silver;
     public int time;
-    public Resource[] resourses;
-    public Production[] productions;
+    public Resource[] resourses = new Resource[0];
+    public Production[] productions = new Production[0];
     public Troop troops;
     public int freeCrop;
       

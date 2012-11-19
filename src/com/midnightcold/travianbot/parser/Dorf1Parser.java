@@ -48,11 +48,11 @@ public class Dorf1Parser {
         //Загружаем, где какие ресуры находятся
 
         BufferedReader file; 
-        try {
-            file = new BufferedReader(new FileReader("D:\\Other\\TravianBot\\src\\com\\midnightcold\\travianbot\\travianWorker\\typeVillages")); //Загрузить файл
+        try {//TODO: Сдедать нормальный путь
+            file = new BufferedReader(new FileReader("C:\\http\\TravianBot\\src\\com\\midnightcold\\travianbot\\parser\\typeVillages")); //Загрузить файл
         } catch (FileNotFoundException ex) {
             //TODO: Сделать нормальную ошибку
-           
+           System.err.println(ex);
             return null;
         }
 
